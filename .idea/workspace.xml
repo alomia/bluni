@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d94f53c-f387-4da0-88a0-c011ef4c728e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bluni/bluni/BluniApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bluni/bluni/BluniApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bluni/bluni/ServletInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bluni/bluni/ServletInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/bluni/bluni/BluniApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bluni/bluni/BluniApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +19,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/bluni/bluni/BluniApplication.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="BluniApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -55,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646186577054</updated>
       <workItem from="1646186595643" duration="324000" />
+      <workItem from="1646280659320" duration="773000" />
     </task>
     <servers />
   </component>

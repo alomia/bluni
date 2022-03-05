@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bluni:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bluni</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bluni-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="bluni:war exploded" />
+    </root>
+  </artifact>
+</component>

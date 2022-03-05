@@ -9,6 +9,12 @@
         <module name="bluni" />
       </profile>
     </annotationProcessing>
+<<<<<<< HEAD
+=======
+    <bytecodeTargetLevel>
+      <module name="bluni" target="11" />
+    </bytecodeTargetLevel>
+>>>>>>> 612a0b4cca0e9069cd7b698e2896d17ed2ea7502
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

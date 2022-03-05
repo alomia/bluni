@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.bluni.bluni.BluniApplicationTests
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.671 s - in com.bluni.bluni.BluniApplicationTests
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.128 s - in com.bluni.bluni.BluniApplicationTests
+>>>>>>> 612a0b4cca0e9069cd7b698e2896d17ed2ea7502

@@ -1,11 +1,11 @@
-package com.bluni.bluni.models;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+package com.bluni.bluni.models.entity;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Computer {
+public class Computer implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column
@@ -135,5 +135,23 @@ public class Computer {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "ComputerController{" +
+                "id=" + id +
+                ", procesador='" + procesador + '\'' +
+                ", color='" + color + '\'' +
+                ", ram='" + ram + '\'' +
+                ", board='" + board + '\'' +
+                ", disco_duro='" + disco_duro + '\'' +
+                ", grafica='" + grafica + '\'' +
+                ", marca='" + marca + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
+                ", mac='" + mac + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", tipo='" + tipo + '\'' +
+                '}';
     }
 }

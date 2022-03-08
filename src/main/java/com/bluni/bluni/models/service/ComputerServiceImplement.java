@@ -24,11 +24,11 @@ public class ComputerServiceImplement implements IComputerService {
 
     @Override
     public Computer buscarPorId(Long id) {
-        return computerRepository.findById(Math.toIntExact(id)).orElse(null);
+        return computerRepository.findById(id).orElse(null);
     }
 
     @Override
     public void eliminar(Long id) {
-        computerRepository.deleteById(Math.toIntExact(id));
+        computerRepository.deleteById(id);
     }
 }

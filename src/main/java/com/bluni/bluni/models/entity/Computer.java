@@ -4,9 +4,13 @@ import java.io.Serializable;
 
 @Entity
 public class Computer implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(name = "id")
+    private long id;
 
     @Column
     private String procesador;
@@ -41,11 +45,11 @@ public class Computer implements Serializable {
     @Column
     private String tipo;
 
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.id = id;
     }
 

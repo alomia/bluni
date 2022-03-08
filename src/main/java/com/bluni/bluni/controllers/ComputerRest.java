@@ -1,7 +1,7 @@
 package com.bluni.bluni.controllers;
 
 import com.bluni.bluni.models.Computer;
-import com.bluni.bluni.repositories.ComputerDAO;
+import com.bluni.bluni.models.repository.ComputerDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

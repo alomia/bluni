@@ -3,8 +3,47 @@
 <head th:replace="template/template :: head"></head>
 <body>
 <header th:replace="template/template :: header"></header>
+<div class="container">
     <h1 th:text="${titulo}"></h1>
-    <p th:text="${computers}"></p>
+</div>
+<div class="container">
+    <a href="" class="btn btn-primary btn-sm" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Board</th>
+            <th scope="col">Color</th>
+            <th scope="col">Disco Duro</th>
+            <th scope="col">GPU</th>
+            <th scope="col">MAC</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">CPU</th>
+            <th scope="col">RAM</th>
+            <th scope="col">TIpo</th>
+            <th scope="col">Ubicación</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="cl:${computers}">
+            <th scope="row" th:text="${cl.id}"></th>
+            <td th:text="${cl.board}"></td>
+            <td th:text="${cl.color}"></td>
+            <td th:text="${cl.disco_duro}"></td>
+            <td th:text="${cl.grafica}"></td>
+            <td th:text="${cl.mac}"></td>
+            <td th:text="${cl.marca}"></td>
+            <td th:text="${cl.modelo}"></td>
+            <td th:text="${cl.procesador}"></td>
+            <td th:text="${cl.ram}"></td>
+            <td th:text="${cl.tipo}"></td>
+            <td th:text="${cl.ubicacion}"></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
 <footer th:replace="template/template :: footer"></footer>
 </body>
 </html>

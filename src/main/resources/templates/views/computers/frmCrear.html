@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template/template :: head"></head>
+<body>
+<header th:replace="template/template :: header"></header>
+<div class="container">
+    <div class="card bd-dark">
+        <div class="card-header bg-dark text-white">
+            <h1 class="text-center ">Lista de equipos</h1>
+        </div>
+        <div class="card-body">
+    <form th:action="@{/views/computers/save}" method="post">
+        <div class="row mb-3">
+            <label for="board" class="col-sm-2 col-form-label">Tarjeta madre</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="board" placeholder="ASUS XXX">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="color" class="col-sm-2 col-form-label">Color del equipo</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="color" placeholder="Negro, blanco, etc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="grafica" class="col-sm-2 col-form-label">Tarjeta gráfica</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="grafica" placeholder="Nvidia - Radeon - XXX">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="mac" class="col-sm-2 col-form-label">MAC</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="mac" placeholder="XX:Xx:xX:Xx:XX:Xx">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="marca" class="col-sm-2 col-form-label">Marca</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="marca" placeholder="Asus, Dell, Compumax, IBM, etc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="modelo" class="col-sm-2 col-form-label">Modelo</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="modelo" placeholder="¿De qué modeelo es el equipo?">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="procesador" class="col-sm-2 col-form-label">Procesador</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="procesador" placeholder="Intel o AMD XXX">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="ram" class="col-sm-2 col-form-label">Ram</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ram" placeholder="¿Cuantos Gygabytes tiene de RAM?">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="tipo" class="col-sm-2 col-form-label">Tipo</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="tipo" placeholder="¿Portatil? ¿Todo en uno? ¿De escritorio?">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="ubicacion" class="col-sm-2 col-form-label">Ubicacion</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="ubicacion" placeholder="¿Se encuentra en alguna oficina, sala o acaso en la bodega?">
+            </div>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Guardar"></input>
+    </form>
+        </div>
+    </div>
+</div>
+<footer th:replace="template/template :: footer"></footer>
+</body>
+</html>

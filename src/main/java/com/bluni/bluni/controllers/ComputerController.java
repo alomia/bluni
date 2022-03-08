@@ -23,4 +23,14 @@ ComputerController {
         model.addAttribute("computers",listadoComputers);
         return "/views/computers/listar";
     }
+    @GetMapping("/create")
+    public String crear(){
+        return "/views/computers/frmCrear";
+    }
+
+    @PostMapping("/save{id}")
+    public String guardar(@ModelAttribute Computer computer){
+        computerService.guardar(computer);
+        return "redirect:/views/computers/";
+    }
 }

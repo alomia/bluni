@@ -6,5 +6,3 @@ USE `bluni`;
 CREATE USER IF NOT EXISTS 'bluni'@'localhost'  IDENTIFIED BY 'bluni';
 GRANT ALL PRIVILEGES ON *.* TO 'bluni'@'localhost';
 FLUSH PRIVILEGES;
-
-

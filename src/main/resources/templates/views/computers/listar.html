@@ -23,6 +23,8 @@
             <th scope="col">RAM</th>
             <th scope="col">TIpo</th>
             <th scope="col">Ubicación</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
         </tr>
         </thead>
         <tbody>
@@ -39,6 +41,11 @@
             <td th:text="${cl.ram}"></td>
             <td th:text="${cl.tipo}"></td>
             <td th:text="${cl.ubication.ubicacion}"></td>
+            <td><a href="" class="btn btn-success btn-sm" th:href="@{/views/computers/edit/} + ${cl.id}" th:text="'Editar'"  title="'Editar'"></a></td>
+            <td>
+                <a href="" class="btn btn-danger btn-sm" th:href="@{/views/computers/delete/} + ${cl.id}" th:text="'Eliminar'"  title="'Eliminar registro'"
+                onclick="return confirm('Are you sure you want to delete');"
+                ></a></td>
         </tr>
 
         </tbody>

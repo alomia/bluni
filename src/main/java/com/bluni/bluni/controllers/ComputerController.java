@@ -43,4 +43,21 @@ ComputerController {
         computerService.guardar(computer);
         return "redirect:/views/computers/";
     }
+
+    @GetMapping("/edit/{id}")
+    public String editar(@PathVariable("id") Long idComputer, Model model) {
+        Computer computer = computerService.buscarPorId(idComputer);
+        List<Ubication> listaUbicaciones = ubicationService.ListaUbicaciones();
+        model.addAttribute("titulo", "Formulario: Editar Equipo");
+        model.addAttribute("computer", computer);
+        model.addAttribute("ubicaciones", listaUbicaciones);
+        return "/views/computers/frmCrear";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String eliminar(@PathVariable("id") Long idComputer) {
+        Computer computer = computerService.buscarPorId(idComputer);
+        computerService.eliminar(idComputer);
+        return "redirect:/views/computers/";
+    }
 }

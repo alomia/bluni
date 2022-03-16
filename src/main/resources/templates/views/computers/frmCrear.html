@@ -9,6 +9,7 @@
         </div>
         <div class="card-body">
     <form th:object="${computer}" th:action="@{/views/computers/save}" method="post">
+        <input th:field="*{id}" type="hidden">
         <div class="row mb-3">
             <label for="board" class="col-sm-2 col-form-label">Tarjeta madre</label>
             <div class="col-sm-8">

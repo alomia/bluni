@@ -1,10 +1,12 @@
 package com.bluni.bluni.models.entity;
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
 @Entity
@@ -23,36 +25,43 @@ public class Computer implements Serializable {
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String procesador;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String color;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String ram;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String board;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String disco_duro;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String grafica;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String marca;
 
     @Getter
@@ -64,15 +73,18 @@ public class Computer implements Serializable {
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String mac;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String modelo;
 
     @Column
     @Getter
     @Setter
+    @NotEmpty
     private String tipo;
 }

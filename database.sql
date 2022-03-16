@@ -3,7 +3,7 @@ USE `bluni`;
 
 -- CREATE USER
 
-CREATE USER IF NOT EXISTS 'bluni'@'localhost'  IDENTIFIED BY 'password';
+CREATE USER IF NOT EXISTS 'bluni'@'localhost'  IDENTIFIED BY 'bluni';
 GRANT ALL PRIVILEGES ON *.* TO 'bluni'@'localhost';
 FLUSH PRIVILEGES;
 

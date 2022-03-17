@@ -63,11 +63,11 @@ ComputerController {
         if (idComputer > 0){
             computer = computerService.buscarPorId(idComputer);
             if (computer == null){
-                attribute.addAttribute("error", "Error: El ID del equipo no existe");
+                attribute.addFlashAttribute("error", "Error: El ID del equipo no existe");
                 return "redirect:/views/computers/";
             }
         } else {
-            attribute.addAttribute("error", "Error con el ID del equipo");
+            attribute.addFlashAttribute("error", "Error con el ID del equipo");
             return "redirect:/views/computers/";
         }
         List<Ubication> listaUbicaciones = ubicationService.ListaUbicaciones();
@@ -84,7 +84,7 @@ ComputerController {
         if (idComputer > 0){
             computer = computerService.buscarPorId(idComputer);
             if (computer == null){
-                attribute.addAttribute("error", "Error: El ID del equipo no existe");
+                attribute.addFlashAttribute("error", "Error: El ID del equipo no existe");
                 return "redirect:/views/computers/";
             }
         } else {

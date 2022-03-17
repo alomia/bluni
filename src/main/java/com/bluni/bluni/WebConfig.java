@@ -27,7 +27,7 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/views/computers/delete/**").hasAnyRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().permitAll()
+                .formLogin().loginPage("/login").permitAll()
                 .and()
                 .logout().permitAll();
     }

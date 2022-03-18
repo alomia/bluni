@@ -14,7 +14,7 @@ public class ComputerServiceImplement implements IComputerService {
 
     @Override
     public List<Computer> listarTodos() {
-        return (List<Computer>) computerRepository.findAll();
+        return computerRepository.findAll();
     }
 
     @Override

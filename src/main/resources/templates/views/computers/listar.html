@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="template/template :: head"></head>
 <body>
 <header th:replace="template/template :: header"></header>
@@ -7,7 +7,7 @@
     <h1 th:text="${titulo}"></h1>
 </div>
 <div class="container">
-    <a href="" class="btn btn-primary btn-sm" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
+    <a href="" class="btn btn-primary btn-sm" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
     <table class="table">
         <thead class="thead-dark">
         <tr>
@@ -23,8 +23,8 @@
             <th scope="col">RAM</th>
             <th scope="col">TIpo</th>
             <th scope="col">Ubicación</th>
-            <th scope="col">Editar</th>
-            <th scope="col">Eliminar</th>
+            <th scope="col" sec:authorize="hasRole('ROLE_ADMIN')">Editar</th>
+            <th scope="col" sec:authorize="hasRole('ROLE_ADMIN')">Eliminar</th>
         </tr>
         </thead>
         <tbody>
@@ -41,13 +41,30 @@
             <td th:text="${cl.ram}"></td>
             <td th:text="${cl.tipo}"></td>
             <td th:text="${cl.ubication.ubicacion}"></td>
-            <td><a href="" class="btn btn-success btn-sm" th:href="@{/views/computers/edit/} + ${cl.id}" th:text="'Editar'"  title="'Editar'"></a></td>
-            <td>
-                <a href="" class="btn btn-danger btn-sm" th:href="@{/views/computers/delete/} + ${cl.id}" th:text="'Eliminar'"  title="'Eliminar registro'"
-                onclick="return confirm('Are you sure you want to delete');"
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a href="" class="btn btn-success btn-sm" th:href="@{/views/computers/edit/} + ${cl.id}" th:text="'Editar'"  title="'Editar'"></a></td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a href="" class="btn btn-danger btn-sm" th:href="@{/views/computers/delete/} + ${cl.id}" th:text="'Eliminar'"  title="'Eliminar registro'"
+                onclick="return confirm('¿Desea eliminar este registro?');"
                 ></a></td>
         </tr>
 
+        <tr th:each="cl:${computers}">
+            <th scope="row" th:text="${cl.id}"></th>
+            <td th:text="${cl.board}"></td>
+            <td th:text="${cl.color}"></td>
+            <td th:text="${cl.disco_duro}"></td>
+            <td th:text="${cl.grafica}"></td>
+            <td th:text="${cl.mac}"></td>
+            <td th:text="${cl.marca}"></td>
+            <td th:text="${cl.modelo}"></td>
+            <td th:text="${cl.procesador}"></td>
+            <td th:text="${cl.ram}"></td>
+            <td th:text="${cl.tipo}"></td>
+            <td th:text="${cl.ubication.ubicacion}"></td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a href="" class="btn btn-success btn-sm" th:href="@{/views/computers/edit/} + ${cl.id}" th:text="'Editar'"  title="'Editar'"></a></td>
+            <td sec:authorize="hasRole('ROLE_ADMIN')"><a href="" class="btn btn-danger btn-sm" th:href="@{/views/computers/delete/} + ${cl.id}" th:text="'Eliminar'"  title="'Eliminar registro'"
+                                                         onclick="return confirm('¿Desea eliminar este registro?');"
+            ></a></td>
+        </tr>
         </tbody>
     </table>
 </div>

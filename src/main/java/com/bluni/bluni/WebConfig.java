@@ -1,5 +1,6 @@
 package com.bluni.bluni;
 
+import com.bluni.bluni.models.util.LoginSuccessMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -17,6 +18,8 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
+    @Autowired
+    private LoginSuccessMessage successMessage;
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers("/index", "/home", "/", "/css/**", "/js/**", "img/**").permitAll()
@@ -27,7 +30,9 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/views/computers/delete/**").hasAnyRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().loginPage("/login").permitAll()
+                .formLogin()
+                .successHandler(successMessage)
+                .loginPage("/login").permitAll()
                 .and()
                 .logout().permitAll();
     }

@@ -60,9 +60,9 @@ ComputerController {
 
         Computer computer = null;
 
-        if (idComputer > 0){
+        if (idComputer > 0) {
             computer = computerService.buscarPorId(idComputer);
-            if (computer == null){
+            if (computer == null) {
                 attribute.addFlashAttribute("error", "Error: El ID del equipo no existe");
                 return "redirect:/views/computers/";
             }
@@ -81,9 +81,9 @@ ComputerController {
     public String eliminar(@PathVariable("id") Long idComputer, RedirectAttributes attribute) {
         Computer computer = null;
 
-        if (idComputer > 0){
+        if (idComputer > 0) {
             computer = computerService.buscarPorId(idComputer);
-            if (computer == null){
+            if (computer == null) {
                 attribute.addFlashAttribute("error", "Error: El ID del equipo no existe");
                 return "redirect:/views/computers/";
             }

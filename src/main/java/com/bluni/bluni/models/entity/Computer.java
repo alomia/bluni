@@ -1,8 +1,6 @@
 package com.bluni.bluni.models.entity;
 
-import com.sun.istack.NotNull;
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
 import javax.persistence.*;

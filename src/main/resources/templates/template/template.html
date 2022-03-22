@@ -16,18 +16,18 @@
 <body>
 <header th:fragment="header" style="width: 100%; text-align: center; margin: auto; padding: auto;">
     <div class="alert alert-success alert-dismissible fade show" role="alert" th:if="${success != null}">
-        <label th:text="${success}">&times</label>
-        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+        <label th:text="${success}"></label>
+        <button class="btn-close" type="button" data-dismiss="alert" aria-label="Close"></button>
     </div>
 
     <div class="alert alert-danger alert-dismissible fade show" role="alert" th:if="${error != null}">
         <label th:text="${error}"></label>
-        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+        <button class="btn-close" type="button" data-dismiss="alert" aria-label="Close"></button>
     </div>
 
     <div class="alert alert-warning alert-dismissible fade show" role="alert" th:if="${warning != null}">
         <label th:text="${warning}"></label>
-        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+        <button class="btn-close" type="button" data-dismiss="alert" aria-label="Close"></button>
     </div>
 </header>
     <div class="sidebar" th:fragment="sidebar">

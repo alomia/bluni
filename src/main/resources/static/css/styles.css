@@ -239,5 +239,12 @@ footer {
 }
 
 header {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
 
+.container {
+    margin-top: 5%;
 }

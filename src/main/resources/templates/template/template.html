@@ -13,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-<header th:fragment="header" style="width: 100%; text-align: center; margin: auto; padding: auto;">
+<header th:fragment="header">
     <div class="alert alert-success alert-dismissible fade show" role="alert" th:if="${success != null}">
         <label th:text="${success}"></label>
         <button class="btn-close" type="button" data-dismiss="alert" aria-label="Close"></button>

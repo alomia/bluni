@@ -31,7 +31,7 @@
             <button class="btn-close" type="button" data-dismiss="alert" aria-label="Close"></button>
         </div>
     </header>
-    <div class="sidebar" th:fragment="sidebar">
+    <div class="sidebar" th:fragment="sidebar" sec:authorize="isAuthenticated()">
         <div class="logo-details">
             <div class="logo_name text-center p-5 m-4 mt-5">
                 <h2>Bluni</h2>

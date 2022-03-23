@@ -83,6 +83,13 @@
                 </a>
                 <span class="tooltip">¿Ingresar al sistema?</span>
             </li>
+            <li sec:authorize="isAuthenticated()">
+                <form th:action="@{/logout}" method="post">
+                    <span class="links_name">Cerrar sesión <button class="bx bx-log-out" id="log_out" type="submit"
+                             value="logout"></button></span>
+                </form>
+                   <span class="tooltip">¿Desea salir del sistema?</span>
+            </li>
         </ul>
     </div>
     <!-- Cuerpo de la página -->

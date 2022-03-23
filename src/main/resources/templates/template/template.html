@@ -87,9 +87,20 @@
     </div>
     <!-- Cuerpo de la página -->
     <section th:fragment="content-main" class="home-section">
-        <div class="text">Contenido de la aplicacion</div>
+        <div class="text">
+            <main class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img  class="img-landing" th:src="@{https://i.imgur.com/c30fCFy.png}">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>La aplicacion que estabas esperando</h1>
+                        <p class="font-weight-blod ">Podras administrar tus equipos de una forma mas eficiente!</p>
+                    </div>
+                </div>
+            </main>
+        </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-dark text-center text-white fixed-bottom" th:fragment="footer">
         <script th:src="@{https://code.jquery.com/jquery-3.2.1.slim.min.js}"

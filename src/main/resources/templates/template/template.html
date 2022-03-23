@@ -72,17 +72,6 @@
                 </form>
                 <span class="tooltip">¿Desea salir del sistema?</span>
             </li>
-
-            <!-- Nuevo Icono cerrar sesion-->
-
-            <li sec:authorize="isAuthenticated()">
-                <form th:action="@{/logout}" method="post" >
-                    <button class="btn " type="submit" value="logout">
-                        <i class="bx bx-log-out"></i>
-                    </button>
-                </form>
-                <span class="tooltip">¿Desea salir del sistema?</span>
-            </li>
         </ul>
     </div>
 <!-- Cuerpo de la página -->

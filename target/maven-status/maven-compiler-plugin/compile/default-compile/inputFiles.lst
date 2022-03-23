@@ -1,7 +1,9 @@
-<<<<<<< HEAD
-/home/f-balanta/Documentos/Holberton_Project/bluni/src/main/java/com/bluni/bluni/ServletInitializer.java
-/home/f-balanta/Documentos/Holberton_Project/bluni/src/main/java/com/bluni/bluni/BluniApplication.java
-=======
-D:\Documentos\Proyecto\bluni\src\main\java\com\bluni\bluni\ServletInitializer.java
-D:\Documentos\Proyecto\bluni\src\main\java\com\bluni\bluni\BluniApplication.java
->>>>>>> 612a0b4cca0e9069cd7b698e2896d17ed2ea7502
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/ServletInitializer.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/controllers/UserController.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/BluniApplication.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/controllers/ComputerRest.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/models/User.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/models/Computer.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/repositories/ComputerDAO.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/service/UserService.java
+/home/alomia/Escritorio/Proyectos/bluni/src/main/java/com/bluni/bluni/repositories/UserRepository.java

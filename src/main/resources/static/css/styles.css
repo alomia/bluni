@@ -295,12 +295,13 @@ header{
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 500px;
+    height: 700px;
     top: 100px;
     background-image: url('https://fondosmil.com/fondo/28324.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+    background-size: 105%;
 }
 .img-area h2 {
     padding-top: 10%;

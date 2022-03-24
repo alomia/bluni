@@ -258,7 +258,6 @@ header{
     left: 78px;
     width: calc(100% - 78px);
     transition: all 0.5s ease;
-    z-index: 2;
     background-color: #11101d;
 
 }
@@ -275,4 +274,58 @@ header{
 
 .img-pdf{
     width: 5%;
+}
+.img-landing{
+    width: 100%;
+    border-radius: 160px;
+    border:5px solid #666;
+}
+.col-md-6{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-bottom: 30px;
+}
+.img-landing-2{
+    width: 90%;
+    border-radius: 10px;
+    border:5px solid #666;
+}
+
+.img-area {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    top: 100px;
+    background-image: url('https://fondosmil.com/fondo/28324.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.img-area h2 {
+    padding-top: 10%;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+}
+.img-area p {
+    align-content: center;
+    font-size: 25px;
+    font-family: poppins;
+    color: #fff;
+}
+.team-member {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.15rem solid rgba(0, 0, 0, 0.103);
+}
+.team-member h4, .team-member .h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }

@@ -4,12 +4,107 @@
 <body>
 <div th:replace="template/template :: sidebar"></div>
 <header th:replace="template/template :: header"></header>
-<section class="home-section">
-    <div class="container">
+<section class="home-section text-center">
+    <div class="img-area">
+        <h2 class="text-center">BLUNI</h2>
+        <p>Es un sistema de control de inventario que automatiza el proceso de administracion en las universidades y escuelas.</p>
+    </div>
+    <div class="text">
+        <main class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="img-landing" th:src="@{https://i.imgur.com/jwHHN8f.png.png}">
+                </div>
+                <div class="col-md-6 text-center my-auto">
+                    <h1 class="font-weight-bold">La aplicacion que estabas esperando</h1>
+                    <p>Podras administrar tus equipos de una forma mas eficiente!</p>
+                </div>
 
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-center">
+                    <img class="img-landing" th:src="@{https://i.imgur.com/it3F0zC.png}">
+                </div>
+                <div class="col-md-6 text-center my-auto">
+                    <h1 class="font-weight-bold">¿Cansado de los apuntes?</h1>
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="img-landing" th:src="@{https://i.imgur.com/O36FYwe.png}">
+                </div>
+                <div class="col-md-6 text-center my-auto">
+                    <h1 class="font-weight-bold">La aplicacion que estabas esperando</h1>
+                    <p>Podras administrar tus equipos de una forma mas eficiente!</p>
+                </div>
+
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 text-center">
+                    <img class="img-landing" th:src="@{https://i.imgur.com/5G8E57D.png}">
+                </div>
+                <div class="col-md-6 text-center my-auto">
+                    <h1 class="font-weight-bold">La aplicacion que estabas esperando</h1>
+                    <p>Podras administrar tus equipos de una forma mas eficiente!</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center p-5">
+                    <img class="img-landing-2" th:src="@{https://i.imgur.com/it3F0zC.png}">
+                </div>
+            </div>
+            <div class="nosotros">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">NUESTRO EQUIPO</h2>
+                </div>
+                <div class="row">
+
+                    <div class="col">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle bordenosotros" th:src="@{https://i.imgur.com/Ppm0T90.jpg}" alt="..." />
+                            <h4>FELIPE BALANTA</h4>
+                            <p class="text-muted">SSoftware Develope</p>
+                            <a class="btn btn-dark btn mx-2 social-twitter" href="https://twitter.com/JFRBalanta"><i class="fab fa-twitter" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-facebook" href="https://www.facebook.com/MrBalantik"><i class="fab fa-facebook-f" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-whatsapp" href="https://wa.link/m9gddw"><i class="fab fa-whatsapp" style="color:white"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/fotoValen.jpg" alt="..." />
+                            <h4>DAVID BALANTA</h4>
+                            <p class="text-muted">SSoftware Develope</p>
+                            <a class="btn btn-dark btn mx-2 social-twitter" href="#!"><i class="fab fa-twitter" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-facebook" href="#!"><i class="fab fa-facebook-f" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-whatsapp" href="#!"><i class="fab fa-whatsapp" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-youtube" href="#!"><i class="fab fa-youtube" style="color:white"></i></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" th:src="@{https://i.imgur.com/Hq9RpJq.jpg}" alt="..." />
+                            <h4>ALEJANDRO ALOMIA</h4>
+                            <p class="text-muted">SSoftware Develope</p>
+                            <a class="btn btn-dark btn mx-2 social-twitter" href="#!"><i class="fab fa-twitter" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-facebook" href="#!"><i class="fab fa-facebook-f" style="color:white"></i></a>
+                            <a class="btn btn-dark btn mx-2 social-whatsapp" href="#!"><i class="fab fa-whatsapp" style="color:white"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="contactanos">
+
+            </div>
+        </main>
     </div>
 </section>
 <footer th:replace="template/template :: footer"></footer>
 
 </body>
 </html>
+

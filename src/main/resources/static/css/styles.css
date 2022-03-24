@@ -268,3 +268,7 @@ header{
 .img-landing{
     width: 600px;
 }
+
+.navbar-nav{
+    margin-right: 5%;
+}

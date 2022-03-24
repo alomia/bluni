@@ -13,6 +13,7 @@ public interface ComputerRepository extends JpaRepository<Computer, Long> {
             " OR disco_duro LIKE  %?1" +
             " OR grafica LIKE  %?1" +
             " OR mac LIKE %?1" +
+            " OR marca LIKE %?1" +
             " OR modelo LIKE %?1" +
             " OR ram LIKE %?1" +
             " OR tipo LIKE %?1" +

@@ -14,6 +14,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -34,10 +36,10 @@
                             <a class="nav-link" th:href="@{/index}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/index}">Contactanos</a>
+                            <a class="nav-link" href="#contactanos">Contactanos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/index}">¿Quienes somos?</a>
+                            <a class="nav-link" href="#nosotros">¿Quienes somos?</a>
                         </li>
                         <li sec:authorize="!isAuthenticated()">
                             <a th:href="@{/login}" class="btn btn-outline-warning">Iniciar sesión</a>
@@ -78,23 +80,16 @@
         </div>
 
         <ul class="nav-list">
-            <li>
-                <a th:href="@{/}">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Inicio</span>
-                </a>
-                <span class="tooltip">Ir al inicio</span>
-            </li>
             <li sec:authorize="isAuthenticated()">
                 <a th:href="@{/views/computers/}">
-                    <i class='bx bx-user'></i>
+                    <i class='bx bx-receipt'></i>
                     <span class="links_name">Inventario</span>
                 </a>
                 <span class="tooltip">Ver registros</span>
             </li>
             <li sec:authorize="isAuthenticated()">
                 <a th:href="@{/views/ubications/}">
-                    <i class='bx bx-user'></i>
+                    <i class='bx bx-border-all'></i>
                     <span class="links_name">Ubicaciones</span>
                 </a>
                 <span class="tooltip">Ver ubicaciones</span>
@@ -128,6 +123,7 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
         <script th:src="@{/js/sidebar.js}"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     </footer>
 </body>
 

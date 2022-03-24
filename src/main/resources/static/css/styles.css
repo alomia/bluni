@@ -329,3 +329,30 @@ header{
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
+.team-member a.social-twitter:hover {
+    background: #1da1f2;
+}
+.team-member a.social-twitter:hover > svg {
+    color: white !important;
+}
+
+.team-member a.social-facebook:hover {
+    background: black;
+}
+.team-member a.social-facebook:hover > svg {
+    color: white !important;
+}
+
+.team-member a.social-whatsapp:hover {
+    background: #0a66c2;
+}
+.team-member  a.social-whatsapp:hover > svg{
+    color: white !important;
+}
+.nosotros{
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.nosotros p{
+    font-size: 25px;
+}

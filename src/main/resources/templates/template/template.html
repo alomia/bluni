@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header th:fragment="header" class="header" th:style="${authenticated == false ? 'width:100%' : ''}">
+    <header th:fragment="header" class="header" th:style="${isAuthenticated}? 'width: calc(100% - 78px); left: 78px;' : 'left:auto; width:100%;'">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"  aria-expanded="false" aria-label="Toggle navigation">

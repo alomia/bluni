@@ -15,3 +15,7 @@ function menuBtnChange() {
         closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
     }
 }
+
+function limpiarCampos() {
+    window.location='/views/computers/';
+}

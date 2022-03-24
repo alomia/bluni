@@ -8,7 +8,26 @@
     <h1 th:text="${titulo}"></h1>
 </div>
 <div class="container">
-    <a href="" class="btn btn-primary btn-sm" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
+    <form class="form-inline" th:action="@{/views/computers/}">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label>Filtrar: </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" name="palabraClave" class="form-control" id="palabraClave" th:value="${palabraClave}" placeholder="Escribe el valor a buscar" required>
+            </div>
+            <div class="col-auto">
+                <input type="submit" class="btn btn-primary mb-2" value="Buscar">&nbsp;&nbsp;
+            </div>
+            <div class="col-auto">
+                <input type="button" class="btn btn-secondary mb-2" value="Limpiar" onclick="limpiarCampos()">
+            </div>
+            <div class="col-auto">
+                <a href="" class="btn btn-primary mb-2" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
+            </div>
+        </div>
+    </form>
+    <br>
     <table class="table">
         <thead class="thead-dark">
         <tr>

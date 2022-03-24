@@ -12,8 +12,9 @@ public class ComputerServiceImplement implements IComputerService {
     @Autowired
     private ComputerRepository computerRepository;
 
-    @Override
-    public List<Computer> listarTodos() {
+    public List<Computer> listarTodos(String palabraClave) {
+        if (palabraClave != null)
+            return computerRepository.findAll(palabraClave);
         return computerRepository.findAll();
     }
 
@@ -31,4 +32,5 @@ public class ComputerServiceImplement implements IComputerService {
     public void eliminar(Long id) {
         computerRepository.deleteById(id);
     }
+
 }

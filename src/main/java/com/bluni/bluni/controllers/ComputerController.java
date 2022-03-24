@@ -5,6 +5,7 @@ import com.bluni.bluni.models.entity.Ubication;
 import com.bluni.bluni.models.service.IComputerService;
 import com.bluni.bluni.models.service.IUbicationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,11 +25,12 @@ ComputerController {
     private IUbicationService ubicationService;
 
     @Secured("ROLE_USER")
-    @GetMapping("/")
-    public String listarComputers(Model model) {
-        List<Computer> listadoComputers = computerService.listarTodos();
+    @RequestMapping("/")
+    public String listarComputers(Model model, @Param("palabraClave") String palabraClave) {
+        List<Computer> listadoComputers = computerService.listarTodos(palabraClave);
         model.addAttribute("titulo", "Lista de equipos");
         model.addAttribute("computers", listadoComputers);
+        model.addAttribute("palabraClave", palabraClave);
         return "/views/computers/listar";
     }
 

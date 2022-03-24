@@ -31,92 +31,104 @@ public class listarComputersPdf extends AbstractPdfView {
         document.setMargins(-60, -60, 40, 20);
         document.open();
 
-        Font fuenteTitulo = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20, Color.BLACK);
-        Font fuenteTituloColumnas = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12, Color.BLACK);
+        Font fuenteTitulo = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20, Color.WHITE);
+        Font fuenteTituloColumnas = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12, Color.WHITE);
         Font fuenteCeldas = FontFactory.getFont(FontFactory.COURIER, 8, Color.BLACK);
 
         celda = new PdfPCell(new Phrase("LISTADO GENERAL DE COMPUTADORES", fuenteTitulo));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(30);
+        celda.setBorderColor(Color.lightGray);
         tituloTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("ID", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Board", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Disco duro", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("GPU", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("MAC", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Marca", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Modelo", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("CPU", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("RAM", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Tipo", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         celda = new PdfPCell(new Phrase("Ubicación", fuenteTituloColumnas));
-        celda.setBackgroundColor(Color.lightGray);
+        celda.setBackgroundColor(Color.BLACK);
         celda.setHorizontalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setVerticalAlignment(PdfPCell.ALIGN_CENTER);
         celda.setPadding(10);
+        celda.setBorderColor(Color.lightGray);
         computerTable.addCell(celda);
 
         for (Computer computer : listadoComputers){
@@ -125,46 +137,57 @@ public class listarComputersPdf extends AbstractPdfView {
             String idString = Long.toString(id);
             celda = new PdfPCell(new Phrase(idString, fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getBoard(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getDisco_duro(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getGrafica(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getMac(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getMarca(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getModelo(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getProcesador(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getRam(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getTipo(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
             celda = new PdfPCell(new Phrase(computer.getUbication().getUbicacion(), fuenteCeldas));
             celda.setPadding(5);
+            celda.setBorderColor(Color.lightGray);
             computerTable.addCell(celda);
 
 

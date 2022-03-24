@@ -26,6 +26,11 @@
                 <div class="col-auto">
                     <a href="" class="btn btn-primary mb-2" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/views/computers/create}" th:text="'Nuevo equipo'"  title="'Crear nuevo registro'"></a>
                 </div>
+                <div class="col-auto">
+                    <a class="nav-link float-right" th:href="@{/views/computers/(format=pdf)}" title="'Exportar PDF'" target="_blank">
+                        <img th:src="@{/img/pdf.png}" height="auto" class="img-pdf">
+                    </a>
+                </div>
             </div>
         </form>
         <br>
